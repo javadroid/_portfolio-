@@ -6,8 +6,9 @@
   "author": "",
   "scripts": {
     "dev": "next dev",
-  "build": "next build && next export",
-    "start": "next start"
+  "build": "next build",
+    "start": "next start",
+    "export":"yarn run build && nest export && mv out _static"
   },
   "dependencies": {
     "next": "^12.2.2",
